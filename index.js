@@ -1,15 +1,14 @@
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
-canvas.width = window,innerWidth;
+canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 //store the click spots in an array
 let atoms = [];
 
 class Atom {
-    constructor(x, y) {
-
+    constructor(x, y){
         //initialize the brush
         this.x = x;
         this.y = y;
@@ -19,8 +18,8 @@ class Atom {
     }
     //update window?
     update() {
-        this.x += speedX;
-        this.y += speedY;
+        this.x += this.speedX;
+        this.y += this.speedY;
     }
     //draw
     draw() {
