@@ -18,8 +18,8 @@ class Atom {
 
         //take 2
         this.radius = Math.random()*4;
-        this.speedX=Math.random()*30-15;
-        this.speedY=Math.random()*30-15;
+        this.speedX=Math.random()*3-1.5;
+        this.speedY=Math.random()*3-1.5;
     }
     //update window?
     update() {
